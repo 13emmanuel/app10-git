@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+  <meta charset=utf-"8">
+  <title>proyecto final</title>
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema1.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ 
+  <!--grupo JavaScript-->
+  <script src ="js/jquery-1.11.2.min.js"></script>
+  <script src ="js/jquery.mobile-1.4.5.min.js"></script>
+  <!--<script src ="js/acciones.js"></script>-->
+ 
+  <script src ="phonegap.js"></script><!--necesario*/-->
+ <script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ </head>
+<body onLoad="MM_preloadImages('imagenes/ahora.png','imagenes/input.png','imagenes/formulario.jpg','imagenes/cs1.png','imagenes/responsivo2.png','imagenes/java.jpg')">
+
+<div data-role="page" data-theme="a" rel="stylesheet" href="css/app3-theme.min.css" type="text/css">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>TUTORIAL DAW</h1>
+  </div> 
+  <div>
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>AUTOR</h1>
+    <div data-role="content" align="center">
+    <div>
+   <p> EMMANUEL MORENO QUINTERO</p>
+   <P style="color:#006;"> "PROGRAMACIÓN"</P>
+   <P>4 F</P>
+   </div>
+     <br> 
+    </div>
+   </div>
+  </div>
+   <!--end--->
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Diseña Aplicaciones web</h2> 
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Conociendo HTML</h2>
+      </a>      
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>HTML5</h2>
+      </a>      
+     </li> 
+          <li class="ui-first-child ui-last-child">
+      <a href="#Pagin5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>lo Nuevo de HTML5</h2>
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>¿Que es CSS?</h2>
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Diseño Responsivo de CSS</h2>
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Algo de JavaScript</h2>
+      </a>      
+     </li>       
+    </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicación Diez</h4>
+    <h4>Emmanuel Moreno Quintero</h4>
+   </div>
+  </div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>selectores de CCS</h1> 
+  </div>
+<div data-role="content" align="center">
+   <div>
+    <p>
+   Definen que elementos HTML serán  afectados por las declaraciones
+    </p>
+    <h2>Existen varios tipos de selectores</h2>
+   <li style="color:#F00;">Elementos</li>
+   <li style="color:#F00;">Clases</li>
+   <li style="color:#F00;">ID’s</li>
+   <li style="color:#F00;">Descendientes</li>
+   <li style="color:#F00;">Hijos</li>
+   <li style="color:#F00;">Adyacentes (hermanos o siblings), etc.</li>
+    <br>
+   </div>
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>selectores</h1>
+    <div>
+   <h4> Selector Universal</h4>
+   <p>El selector universal, selecciona todos los  elementos de un documento HTML.
+Se denota por  un “*” </p>
+   <br>
+   <h4> Selectores tipo Etiqueta</h4>
+   <p>Selectores tipo etiqueta o de elementos,  son los más simples y comunes. </p>
+   <br>
+   <h4>Selectores de Clase</h4>
+   <p> Se utiliza para especificar un estilo a un  grupo de elementos con la misma clase.
+Su principal característica, es que se identifica por un punto.</p>
+   <br>
+   <h4> Selectores de ID</h4>
+   <p>Se utiliza para especificar un estilo a un  elemento mediante su id.
+Su principal característica es que se  identifica por un sharp o gato “#” </p>
+   <br>
+   <h4> Diferencia entre Clase e ID</h4>
+   <p style="color:#333;">Clase: se utiliza para un grupo de  elementos, es decir como el apellido de nuestros elementos </p>
+   <p style="color:#333;">ID: se utiliza para un único elemento, no se repite ese id, es decir, como un  numero de INE o CURP de nuestro elemento</p>
+   <br>
+   <h4>Selectores Descendientes</h4>
+   <p>Afectan a elementos que están contenidos dentro de otro(s) elementos.
+Lo usamos mediante el uso de un espacio entre cada elemento.</p>
+     <br> 
+    </div>
+   </div>
+  </div>
+   <!--end--->
+    <!--botn-->
+  <div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://www.brandominus.com/todas-etiquetas-html5/" traget="_self" data-role="button" >
+   <h2> Mas selectores</h2>
+   </a>
+   </li>
+   </ul>
+   </div>
+   </div>
+   </div>
+   <!---end--> 
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Diez, EMQ</h4>
+  </div>
+ </div>
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Conoce las Pseudo-clases y pseudo-Elementos</h1> 
+  </div>
+<div data-role="content" align="center">
+   <div>
+   <h2 style="color:#F00;"> Pseudo-clases </h2>
+    <p>
+    Se utilizan para añadir atributos especiales a algunos selectores.
+    </p>
+    <br>
+    <img src="imagenes/psclases.png" width="50%" height="50%">
+   </div>
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1 style="color:#F00;">pseudo-Elementos</h1>
+    <div>
+   <p>Se utilizan para añadir comportamiento especial a un selector</p>
+     <br> 
+    </div>
+     <img src="imagenes/pselementos.png" width="50%" height="50%"> 
+   </div>
+  </div>
+   <!--end--->
+   <div>
+   <!--botn-->
+       <div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child ui-last-child">
+   <a href="http://www.htmlquick.com/es/reference/tags/input.html" traget="_self" data-role="button" >
+   <h2> ver mas</h2>
+   </a>
+   </li>
+   </ul>
+   </div>
+   </div>
+   <!---end-->
+   </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Diez, EMQ</h4>
+  </div>
+ </div>
+ <div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Diseño Responsivo</h1> 
+  </div>
+<div data-role="content" align="center">
+   <div>
+   
+   <div> 
+   <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/wo2.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/wo1.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/wo3.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/wo5.png" alt="" title="" id="wows1_3"/></li>
+		<li><img src="data1/images/wo6.jpg" alt="" title="" id="wows1_4"/></li>
+		<li><img src="data1/images/wo7.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/wo8.jpg" alt="wowslider" title="" id="wows1_6"/></a></li>
+		<li><img src="data1/images/wo10.jpg" alt="" title="" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data1/tooltips/wo2.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wo1.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wo3.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wo5.png" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wo6.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wo7.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wo8.jpg" alt=""/>7</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wo10.jpg" alt=""/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   </div>
+    <p>
+    El diseño responsivo es un diseño que responde al tamaño del dispositivo desde el que se está visualizando la web, adaptando las dimensiones del contenido y mostrando los elementos de una forma ordenada y optimizada.
+    </p>
+    <p> Consta de una serie de reglas de diseño web que permiten al contenido de un sitio web adaptarse a diferentes resoluciones en diferentes dispositivos</p>
+    <br>
+    <h2>Ventajas</h2>
+    <li style="color:#F00;"> Reducción de costos de producción</li>
+    <li style="color:#F00;">Eficiencia en el mantenimiento</li>
+    <li style="color:#F00;">Mejor usabilidad</li>
+    <li style="color:#F00;">Impacto en el Visitante</li>
+    <br>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/responsivo2.png',1)"><img src="imagenes/responsivo1.png" width="50%" height="50%" id="Image12"></a>
+   </div>
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Diseño responsivo – Ingredientes</h1>
+    <div>
+   <p> 
+   En el diseño responsivo haremos mucho uso de medidas de porcentaje o medidas relativas tales como “em” , “%”, etc… 
+Aun así es válido poder trabajar con pixeles.
+     </p>
+     <br>
+     <h2>Media Queries</h2>
+     <p>
+     Permite la representación del contenido para adaptarse a la resolución de la pantalla. 
+Añadido en CSS3 permiten que el contenido se adapte a un rango específico sin tener que cambiar el contenido.
+
+Se puede agregar al css de dos formas:
+</p>
+<p>
+ En la etiqueta: link
+ Dentro de las Hojas de Estilo
+     </p> 
+    </div>
+    <div>
+ <h2> Media Queries - Condiciones</h2>
+ <p>¿Qué puede ser una condición? 
+Usamos el diseño responsivo porque el ancho de los dispositivos varían, debemos de considerar que “la condición debe de ir de acuerdo al ancho de pantalla” 
+</p>
+<li style="color:#F00;">PC</li>
+<li style="color:#F00;">Tablet</li>
+<li style="color:#F00;">móvil</li>
+<br>
+<br>
+<img src="imagenes/queries.png" width="50%" height="50%">
+    </div>
+   </div>
+  </div>
+   <!--end--->
+     </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicacion diez, EMQ</h4>
+  </div>
+ </div>
+ <div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>JavaScript</h1> 
+  </div>
+<div data-role="content" align="center">
+   <div>
+  <img src="imagenes/java.jpg" width="50%" height="50%">
+<p>
+  avaScript, es uno de los más potentes e importantes lenguajes de programación en la actualidad, por tres enfoques claros: es útil, práctico y está disponible en cualquier navegador web.
+</p>
+    <p>
+   JavaScript es creado por Brendan Eich y vio la luz en el año 1995 con el nombre de LiveScript, que luego fue nombrado JavaScript, nace como un lenguaje sencillo destinado a añadir algunas características interactivas a las páginas web. Sin embargo, hoy en día ha crecido de manera acelerada y es el lenguaje de programación que se utiliza en casi todos los sitios web en el mundo.
+    </p>
+    <br>
+    <h3> ¿Cómo identificar código Javascript?</h3>
+    <br>
+    <img src="imagenes/identificar.png" width="50%" height="50%">
+    <br> 
+    <img src="imagenes/caracteristicas.png" width="50%" height="50%">
+   </div>
+   
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Diez, EMQ</h4>
+  </div>
+ </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Diseña Aplicaciones Web</h1> 
+  </div>
+<div data-role="content" align="center">
+   <div>
+    <p>
+    Las aplicaciones web son un tipo de software que se codifica en un lenguaje soportado por los navegadores web y cuya ejecución es llevada a cabo por el navegador en Internet o de una intranet (de    ahí que reciban el nombre de App web).
+    </p>
+    <h4> Otra definición que podríamos dar para una aplicación web es la siguiente:</h4>
+    <p>
+    Son aquellas herramientas que los usuarios pueden utilizar accediendo a un servidor web por medio de Internet o de una intranet mediante un navegador que ejecutará la misma. 
+    </p>
+    <br>
+    <img src="imagenes/web/DAW.jpg" width="50%" height="50%">
+   </div>
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>¿Como funcionan las Apps web?</h1>
+    <div>
+   <p> las aplicaciones web sean ejecutadas por medio de un navegador web en una red significa que los datos o los archivos en los que trabajas son procesados y almacenados dentro de la una red a   través de un navegador. Por este motivo, este tipo de aplicaciones por lo general, no necesitan ser instaladas en el ordenador o el móvil.
+
+   Una página Web puede contener elementos que permiten una comunicación activa entre el usuario y la información, haciendo que éste acceda a los datos de forma interactiva, ya que el sitio web se    encargará de responder a cada una de las acciones que éste ejecute (por ejemplo acceder a gestores de bases de datos de todo tipo, publicar e interactuar con los contenidos, rellenar y enviar     formularios, participar en juegos, etc.
+     </p>
+     <br> 
+    </div>
+    <div>
+     <img src="imagenes/web/circulo.png" width="50%" height="50%"> 
+    </div>
+   </div>
+  </div>
+   <!--end--->
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Diez, EMQ</h4>
+  </div>
+ </div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>HTML</h1> 
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Estructura Basica De Un Documento HTML</h1>
+    <div>
+     <br> 
+    </div>
+    <div>
+     <img src="imagenes/estructura.png" width="50%" height="50%"> 
+    </div>
+   </div>
+  </div>
+   <!--end--->
+   <h2>ETIQUETAS</h2>
+   <p>
+    El código en HTML está formado por un conjunto  de etiquetas (tags).
+    El navegador interpreta estas etiquetas al momento de cargar la página.
+   </p>
+   <h3 style="color:#900;"> Forma de las Etiquetas HTML</h3>
+   <p>Símbolos  </p>
+   <h4> Estructura básica:</h4>
+   <p>nombre de la etiqueta </p>
+   <p> Tenemos una amplia gama de etiquetas en HTML,  cada una tiene su propio significado.
+
+    El nombre puede ser escrito en mayúsculas o en minúsculas.
+  </p>
+  <h4>Pares de etiquetas </h4>
+  <p>La mayoría de las etiquetas vienen en pares,  es decir:</p>
+  <li>Etiqueta Apertura = Inicio </li>
+  <li> Etiqueta Cierre = Final (contienen una diagonal /)</li>
+  <h4>Etiquetas Individuales </h4>
+  <p>Tenemos algunas otras etiquetas que no vienen en pares, es decir, solo tiene etiqueta de apertura por ejemplo:</p>
+  <img src="imagenes/individuales.png" width="50%" height="50%">
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Elementos HTML</h1>
+    <div>
+   <p>Las etiquetas junto con su contenido, forman  lo que conocemos como un elemento HTML. </p>
+     <br> 
+    </div>
+    <div>
+     <img src="imagenes/elementos.png" width="50%" height="50%">
+     <br> 
+     <h4>Elementos HTML</h4>
+     <p>Todos los elementos HTML se pueden  dividir en dos tipos básicos:</p>
+     <li style="color:#F00;">Elementos en bloque</li> 
+     <p>Un elemento en bloque es aquel que contiene un bloque significativo de contenido que debería mostrarse en su propia línea.
+     Por ejemplo: párrafos, tablas,  listas, etc…</p>
+     <li style="color:#F00;">Elementos en línea</li>
+     <p>Los elementos en línea usualmente contienen menos texto y se muestra junto a otro texto en la misma línea, cómo cuando se enfatizan palabras en     una oración.</p>
+     <h3 style="font:bold;">Los elementos pueden anidarse, es decir, podemos tener elementos HTML dentro de otro(s) elementos</h3>
+     <img src="imagenes/ani.png" width="50%" height="50%">
+    </div>
+   </div>
+  </div>
+   <!--end--->
+   <h2> Atributos en las tags HTML </h2>
+   <p> La etiqueta de apertura de un elemento puede  contener atributos que proporcionan más  información sobre el elemento</p>
+  <img src="imagenes/atributos.png" width="50%" height="50%">
+  <h3>Atributos estándar en HTML</h3>
+  <h4 style="color:#F00;">class</h4>
+  <p>Indica la clase o clases a las cuales un elemento pertenece. Cualquier número de elementos pueden pertenecer a una clase. Un solo elemento puede pertenecer a muchas  clases</p>
+  <h4 style="color:#F00;"> style</h4>
+  <p>Especifica las propiedades CSS de un elemento </p>
+  <h4 style="color:#F00;">id</h4>
+  <p>Especifica un identificador único para un elemento </p>
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Comentarios</h1>
+    <div>
+   <p> Los comentarios en HTML son notas que no  se muestran en el navegador y que se  pueden	leer revisando el código fuente </p>
+     <br> 
+    </div>
+    <div>
+     <img src="imagenes/comentario.png" width="50%" height="50%"> 
+    </div>
+   </div>
+  </div>
+   <!--end--->
+   <br> <br>
+<!---pagina 3-->
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Conoce mas de HTML</h2> 
+       <p> (DOCTYPE, Elemento head, Elementos de body) </p>
+      </a>      
+     </li> 
+     </ul>
+     <br> <br>
+  </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Diez, EMQ</h4>
+  </div>
+</div>
+<!--- nueva pag-->
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Conoce mas de HTML</h1> 
+  </div>
+  <div data-role="content" align="center">
+  <h2>DOCTYPE – Tipo de documento</h2>
+  <p>Document Type Declaration, también conocido  como doctype</p>
+  <div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sus','','imagenes/ahora.png',1)"><img src="imagenes/antes.png" width="50%" height="50%" id="sus"></a>
+    <!--colapsable-->
+<div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>El elemento head </h1>
+    <div>
+   <p> 
+   El elemento head contiene información sobre  el documento HTML, incluyendo palabras clave, enlaces a otros documentos que usa  como archivos CSS y JavaScript.
+     </p>
+     <p>A excepción del elemento title que se muestra en la barra de título del navegador, ningún elemento dentro de head  se muestra en el contenido de la página  HTML</p>
+     <h2>Elementos de head</h2>
+      <br>
+     <br>
+     <li style="color:#F00;">Title</li>
+      <br>
+     <br>
+     <p>Permite agregar un título a un
+documento HTML, se muestran en la barra de  título de los navegadores y se usa como  valor por default cuando se marca una  página como favorita.</p>
+     <li style="color:#F00;">Meta</li>
+     <p>Este elemento contiene información  sobre tu página.
+
+El término meta se refiere a metadatos,  datos de los datos. Su uso más común es para  describir información sobre la descripción y  palabras clave del documento, y el tipo de  codificación.</p>
+ <br>
+     <br>
+<a href="http://www.htmlquick.com/es/reference/tags/meta.html" traget="_self"> Conoce los Atrubtos de Meta </a>
+ <br>
+     <br>
+     <li style="color:#F00;">script</li>
+     <p>Permite integrar lenguajes de scripting en un documento HTML.
+Atributos
+type. Describe el tipo MIME del script que se va  a incluir.
+src: La URL del documento que contiene el script</p>
+ <br>
+     <br>
+     <li style="color:#F00;">Link</li>
+     <p>define las relaciones entre dos  documentos. Su uso más frecuente es para  referirse a las hojas de estilo que usa el  documento.</p>
+     <br>
+     <br>
+     <li style="color:#F00;">style</li>
+     <br>
+     <p style="font:bold; color:#000;">Todo el contenido de un documento HTML se  encuentra en el elemento body.
+
+El elemento body va después del elemento head  y debe cerrarse antes de la etiqueta de cierre del elemento html.</p> 
+    </div>
+   </div>
+  </div>
+   <!--end--->
+   <h2>Elementos de body</h2>
+   <p>Como ya dijimos, en el body estará todo nuestro contenido. HTML5 nos provee una gran  variedad de etiquetas para poder darle semántica al contenido</p>
+   
+   
+   <!--wow-->
+   
+   
+   <br>
+   <br> 
+   <h2> Estructura Semántica</h2> 
+   <p>La semántica es el estudio del significado del lenguaje, el término también es usado para  referirse al significado de un elemento o  atributo HTML </p>
+   <p> Nuestro objetivo es mantener separados el  contenido y la presentación del documento y debemos elegir el elemento más significativo que se adecue mejor a su contenido.</p>
+   <!--botn-->
+       <div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://www.arkaitzgarro.com/html5/capitulo-2.html" traget="_self" data-role="button" >
+   <h2> Mas Información</h2>
+   </a>
+   </li>
+   </ul>
+   </div>
+   </div>
+   <!---end-->
+  </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Diez, EMQ</h4>
+  </div>
+  </div>
+  <!--fin-->
+  <!---pagina 4--->
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a"> 
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>HTML5</h1>
+ </div> 
+  <div data-role="content" align="center">
+  <br>
+  <div>
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/h4.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/h2.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/h5.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/h1.png" alt="" title="" id="wows1_3"/></li>
+		<li><img src="data1/images/h3.png" alt="" title="" id="wows1_4"/></li>
+		<li><img src="data1/images/h6.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/h7.png" alt="bootstrap slider" title="" id="wows1_6"/></a></li>
+		<li><img src="data1/images/h8.png" alt="" title="" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data1/tooltips/h4.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/h2.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/h5.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/h1.png" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/h3.png" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/h6.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/h7.png" alt=""/>7</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/h8.png" alt=""/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  </div>
+  <br>
+  <p>HTML5 no es una reformulación de versiones previas.
+
+HTML5 incluye la redefinición de elementos, la inclusión de nuevos elementos e incluye el uso de nuevas tecnologías como video, audio y canvas.</p>
+<br>
+<br>
+  <!--wow--->
+     
+   <h2> Nuevos Elementos</h2>
+   <img src="imagenes/html5.png" width="50%" height="50%">
+  
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Nuevas Tags</h1>
+<div>
+     <h3 style="color:#F00;">Etiqueta hgroup </h3>
+   <p> Varios headers necesitan múltiples títulos, como un blog que tiene un título y un subtítulo explicando el blog. hgroup permite colocar un h1, h2 y h3 “agrupados” sin afectar el SEO (Search Engine Optimization), permitiendo colocar otro h1 en la página web.</p>
+   <br> 
+   <h3 style="color:#F00;">Etiqueta nav</h3>
+   <p>Se usa para delimitar una sección que contiene elementos de navegación para el sitio o página. Principalmente está  diseñado para que colocar los ‘botones’ de navegación del menú principal. Se puede colocar cualquier etiqueta dentro, aunque lo recomendado es usar listas ul y elementos li.</p>
+   <h3 style="color:#F00;">Etiqueta section</h3>
+   <br>
+   <p>Es un conjunto de elementos relacionados que tienen algo en común, por lo cual merecen estar agrupados dentro de un mismo contenedor. En un blog, sería la zona donde están todos  los posts. En un video de youtube, habría un section para el video, uno para los datos del video, otro para la zona de comentarios.</p>
+   <br>
+   <h3 style="color:#F00;">Etiqueta article</h3>
+   <p>Define zonas únicas de contenido independiente, en otras palabras representa un elemento auto-contenido que puede ser usado o distribuido de forma independiente, por
+ejemplo el post de un blog, o un artículo en una revista, una noticia.</p>
+<br>
+<h3 style="color:#F00;">Etiqueta aside</h3>
+<p>Es un elemento con información escasamente relacionada con el contenido principal.
+</p>
+     <br>
+     <h3 style="color:#F00;">Etiqueta footer</h3> 
+     <p>Es el pie de página y todo lo que lo compone pie datos de autor, copyright, fecha de publicación, datos de contacto.</p>
+            <!--botn-->
+  <div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://www.brandominus.com/todas-etiquetas-html5/" traget="_self" data-role="button" >
+   <h2> Mas Tags</h2>
+   </a>
+   </li>
+   </ul>
+   </div>
+   </div>
+   </div>
+   <!---end--> 
+    </div>
+    </div>
+    <!--colapsable-->
+<div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Input</h1>
+    <div>
+ <p style="color:#000;"> 
+   El elemento input además tiene un atributo  especial para poder hacer una lista, este  atributo es list
+
+Este atributo trabaja con un elemento  llamado datalist que dentro de  él tiene uno o más elementos
+option </p>
+     <br> 
+     <li style="color:#FF0004;">placeholder</li>
+     <p>Pone dentro del input, el texto como marca de agua</p>
+     <li style="color:#FF0004;">autocomplete</li>
+     <p>On/Off. Define si se permite autocompletado o no</p>
+     <li style="color:#FF0004;">autofocus</li>
+     <p>Pone directamente el cursor sobre él al cargar la página.  NOTA: Solamente un autofocus por formulario.</p>
+     <li style="color:#FF0004;">disabled</li>
+     <p>Pone un campo en modo deshabilitado</p>
+     <li style="color:#FF0004;">min - max</li>
+     <p>Usado para inputs numéricos, definen un valor mínimo y máximo</p>
+    </div>
+    <br>
+    <!--botn-->
+       <div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+  <li class="ui-first-child ui-last-child">
+   <a href="http://www.htmlquick.com/es/reference/tags/input.html" traget="_self" data-role="button" >
+   <h2> ver mas</h2>
+   </a>
+   </li>
+   </ul>
+   </div>
+   </div>
+   <!---end-->
+    <br>
+    <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/input.png',1)"><img src="imagenes/input2.jpg" width="50%" height="50%" id="Image19"></a>
+    </div>
+   </div>
+  </div>
+   <!--end---->
+   <h2> Formularios </h2>
+<p>Un formulario permite a un usuario ingresar  datos.
+
+La información que se ingresa se manda a un  servidor en un grupo de datos que consisten  del nombre de los elementos y sus valores.
+</p>
+<p>Para hacer uso de un formulario,  utilizaremos las etiquetas: form 
+
+Requiere de los atributos action y method,  los cuales son la URL del form-handler y el  método HTTP por el cual se envían los  datos, respectivamente.
+</p>
+<li>El valor por default de action es la URL  del documento actual </li>
+<li>El valor por default de method es get (el  otro valor válido es post)</li>
+<h4>Partes de un Formulario en HTML5</h4>
+<li>fieldset sirve para agrupar varios  controles relacionados</li>
+<li>legend proporciona un título para un  elemento fieldset</li>
+<li>label crea una etiqueta o nombre para  un elemento en específico</li>
+<li>input Muchos de los elementos de un  formulario se crean con este elemento</li>
+
+    <!--colapsable-->
+<div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Validación de Formularios</h1>
+    <div>
+   <p style="color:#000;">La validación de un formulario, generalmente  es tarea de un form-handler, es decir del  lado del servidor.
+
+HTML5 nos trae nuevas herramientas las  cuales permitirán validar formularios desde  el lado del cliente, para dar más eficiencia
+a la validación.</p>
+     <br>
+     <li style="color:#F00;">Validación por Valor Faltante </li> 
+     <p>Este tipo de validación se ocasiona por el  nuevo atributo “required” el cual provoca  que si un campo está vacío, se ocasione un  error, por lo tanto será inválido.</p>
+     <br>
+       <li style="color:#F00;">Validación por Patrón</li>
+       <p>Este tipo de validación ocurre cuando nosotros definimos un patrón a seguir dentro de nuestro input</p>
+       <p>Este patrón indica que debe de haber 16 caracteres los cuales podrán ser dígitos del0 al 9, caso contrario será inválido.</p> 
+    </div>
+    <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/formulario.jpg',1)"><img src="imagenes/formulario2.jpg" width="50%" height="50%" id="Image13"></a>
+    </div>
+   </div>
+  </div>
+   <!--end-->
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Diez, EMQ</h4>
+  </div>
+ </div>
+ </div>
+ <div data-role="page" id="Pagin5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Diseña Aplicaciones Web</h1> 
+  </div>
+<div data-role="content" align="center">
+   <img src="imagenes/ventajas.png" width="50%" height="50%">
+   <br>
+   <br>
+   <br>
+   <h2> Semántica</h2>
+   <li>Secciones y Contenidos</li>
+   <li>Video y Audio</li>
+   <li>Formularios</li>
+   <h2> conectividad</h2>
+   <li>Web Sockets</li>
+   <li> Servidor coloca datos en cliente</li>
+   <li> WebRTC (Real Time  Communications)</li>
+   <h2>Desconectado y Almacenamiento</h2>
+   <li>IndexedDB</li>
+   <li>Uso archivos desde  aplicaciones Web</li>
+   <li>Uso de la Caché</li>
+   <h2>Multimedia</h2>
+   <li>API de cámara</li>
+   <li>Subtítulos</li>
+   <li>Elementos de Audio y Video</li>
+   <h2>3D, Gráficos y Efectos</h2>
+   <li>WebGL - Canvas</li>
+   <li>API de texto para Canvas</li>
+   <li>SVG (Scalable Vector Graphics)</li>
+   <h2>CSS3 Styling</h2>
+   <li>Bordes</li>
+   <li>Animación</li>
+   <li>Tipografía</li>
+   <li>Responsive Design</li>
+   <li>Fondos</li>
+   <h2>Acceso al Dispositivo</h2>
+   <li>Eventos táctiles</li>
+   <li>Geolocalización</li>
+   <li>Detección de orientación  del dispositivo</li>
+   <li>API Pointer Lock</li>
+   <h2>Rendimiento</h2>
+   <li>Web Workers</li>
+   <li>XMLHttpRequest (Nivel 2)</li>
+   <li>API Historial</li>
+   <li>API Drag and Drop</li>
+   <li>API Fullscreen</li>
+  </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Diez, EMQ</h4>
+  </div>
+ </div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>¿Que es CSS?</h1> 
+  </div>
+<div data-role="content" align="center">
+   <div>
+    <p>
+   Cascading Style Sheets (CSS) ‘Hoja de estilo en cascada’ es un lenguaje usado para definir y crear la presentación de un documento estructurado escrito en HTML.
+CSS separa la estructura de un documento de su presentación.
+La información de estilo puede ser definida en un documento separado o en el mismo documento HTML.
+    </p>
+    <h2>Evolución de CSS</h2>
+    <p>
+   El organismo W3C (World Wide Web Consortium),  encargado de crear todos los estándares  relacionados con la web, propuso la creación de  un lenguaje de hojas de estilos específico para el lenguaje HTML
+    </p>
+    <p>2 Propuestas:</p>
+    <li style="font:bold;">CHS (Cascading HTML Sheets) por Hakon Wium Lie</li>
+    <li style="font:bold;">SSP (Stream-based Style Sheet Proposal) por  Bert Bos</li>
+    <br>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/cs1.png',1)"><img src="imagenes/cs2.png" width="50%" height="50%" id="Image11"></a>
+    
+   </div>
+   <!--colapsable-->
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+    <h1>Hojas de estilo</h1>
+    <div>
+     <img src="imagenes/estilo1.png" width="50%" height="50%">
+     <br> 
+     <img src="imagenes/stilo2.png" width="50%" height="50%">
+    </div>
+   </div>
+  </div>
+   <!--end--->
+   <h2>Sintaxis de CSS</h2>
+   <p>CSS tiene una sintaxis sencilla, que usa palabras clave (inglés) para especificar los nombres de las propiedades y la mayoría de los valores.
+Se especifica el elemento o elementos a aplicar el estilo (se pueden usar etiquetas, id o clases separadas o se pueden apilar)
+Vienen en pares de nombre/valor: name:value;
+Cada línea terminan con ;
+</p>
+<img src="imagenes/sector.png" width="50%" height="50%">
+<br> 
+<br>
+<h2> Declaraciones</h2>
+<p>Una declaración es un par propiedad y valor  que definen la apariencia visual de un  elemento HTML.</p>
+<li style="color:#F00;">Propiedad:</li> <p>Característica que modifica  al elemento seleccionado</p>
+<li style="color:#F00;">Valor:</li><p> Establece el nuevo valor para la  propiedad a modificar.</p>
+<br>
+<br>
+<h2>Estructura básica</h2>
+<img src="imagenes/come.png" width="50%" height="50%">
+<br>
+<h2 style="color:#090;">Modelo de espacio en los elementos de HTML</h2>
+<img src="imagenes/espacio.png" width="50%" height="50%">
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>conoce los selectores de CSS</h2>
+      </a>      
+     </li> 
+     <br>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>conoce las Pseudo-clases y Pseudo-Elementos</h2>
+      </a>      
+     </li> 
+     </ul>
+  </div>
+  <br><br>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/make.png" width="46" height="46">
+   </div>
+   <h4>Aplicación Diez, EMQ</h4>
+  </div>
+ </div>
+</body>
+</html>
+
